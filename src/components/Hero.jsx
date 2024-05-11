@@ -9,8 +9,9 @@ const Hero = () => {
 	);
 
 	const handleVideoSrc = () => {
-		if (window.innerWidth < 760) setVideoSrc(smallHeroVideo);
-		else {
+		if (window.innerWidth < 760) {
+			setVideoSrc(smallHeroVideo);
+		} else {
 			setVideoSrc(heroVideo);
 		}
 	};
